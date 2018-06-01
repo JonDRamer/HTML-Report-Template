@@ -164,7 +164,6 @@ body {
 	#topLinks {
 		display: @display;
 		justify-content: center;
-		flex-direction: row;
 		align-items: center;
 
 		h2 {
@@ -178,6 +177,49 @@ body {
 		}
 	}
 
+	.items {
+		display: flex;
+		justify-content: center;
+		flex-direction: row;
+		flex-wrap: wrap;
+		width: 15%;
+		margin: 20px;
+
+		.thumbnail {
+			height: 200px;
+			width: 100%;
+			background-color: lightgray;
+		}
+
+		h6 {
+			text-align: center;
+			font-weight: 600;
+			padding: 2px;
+		}
+
+		p {
+			text-align: center;
+			padding: 2px;
+		}
+
+		.salesSummary {
+			display: flex;
+			justify-content: center;
+			flex-direction: row;
+			flex-wrap: wrap;
+			margin-top: 10px;
+
+			.linkTotal {
+				font-weight: 600;
+			}
+
+			.pipe {
+				height: 12px;
+				border-left: 1px solid black;
+				margin-left: 5px;
+			}
+		}
+	}
 }
 
 

@@ -222,7 +222,6 @@ body {
 #lower #topLinks {
   display: flex;
   justify-content: center;
-  flex-direction: row;
   align-items: center;
 }
 #lower #topLinks h2 {
@@ -232,4 +231,41 @@ body {
   height: 2px;
   width: 20%;
   background-color: #000000;
+}
+#lower .items {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 15%;
+  margin: 20px;
+}
+#lower .items .thumbnail {
+  height: 200px;
+  width: 100%;
+  background-color: lightgray;
+}
+#lower .items h6 {
+  text-align: center;
+  font-weight: 600;
+  padding: 2px;
+}
+#lower .items p {
+  text-align: center;
+  padding: 2px;
+}
+#lower .items .salesSummary {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+#lower .items .salesSummary .linkTotal {
+  font-weight: 600;
+}
+#lower .items .salesSummary .pipe {
+  height: 12px;
+  border-left: 1px solid black;
+  margin-left: 5px;
 }
